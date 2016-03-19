@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+get_script_dir () {
+  src="${BASH_SOURCE[0]}"
+
+  while [[ -h "$src" ]]; do
+    dir="$(cd -P "$( dirname "$src" )" && pwd)"
+    src="$(readlink "$src")"
+    [[ $src != /* ]] && src="$dir/$src"
+  done
+
+  dir="$(cd -P "$( dirname "$src" )" && pwd)"
+  echo "$dir"
+}
+
+# array of authors
+authors=("paulirish" "mathiasbynens" "dholm")
+
+# seed random generator
+RANDOM=$$$(date +%s)
+
+shopt -s nullglob
+authors=(lib/*)
+
+author=${authors[$RANDOM % ${#authors[@]} ]}
+
+source "$(get_script_dir)/$author"

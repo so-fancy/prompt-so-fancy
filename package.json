@@ -1,0 +1,26 @@
+{
+  "name": "prompt-so-fancy",
+  "version": "0.0.0",
+  "description": "Make your terminal look more fancy",
+  "bin": {
+    "prompt-so-fancy": "prompt-so-fancy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevemao/prompt-so-fancy.git"
+  },
+  "keywords": [
+    "git",
+    "prompt",
+    "fancy",
+    "good-lookin'",
+    "color",
+    "readable"
+  ],
+  "author": "Steve Mao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevemao/prompt-so-fancy/issues"
+  },
+  "homepage": "https://github.com/stevemao/prompt-so-fancy#readme"
+}
