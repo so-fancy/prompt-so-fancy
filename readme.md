@@ -46,7 +46,7 @@ Pull requests quite welcome, along with any feedback or ideas.
 
 ```sh
 # fork and clone the prompt-so-fancy repo.
-git clone https://github.com/steve-mao/prompt-so-fancy/ && cd prompt-so-fancy
+git clone https://github.com/<your-username>/prompt-so-fancy/ && cd prompt-so-fancy
 ```
 
 Make changes and send a PR!
